@@ -1,4 +1,4 @@
-name: thelook-project
+name: thelook_project
 
 services:
   db:
