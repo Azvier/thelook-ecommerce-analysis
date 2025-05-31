@@ -1,0 +1,24 @@
+name: thelook-project
+
+services:
+  db:
+    image: postgres:17.5
+    container_name: thelook_postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: azalea
+      POSTGRES_PASSWORD: azalea
+      POSTGRES_DB: thelook_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - thelook_pgdata:/var/lib/postgresql/data
+      - ./data/raw:/mnt/data_raw:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U azalea -d thelook_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  thelook_pgdata:
