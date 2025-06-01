@@ -1,0 +1,15 @@
+[project]
+name = "01-fullstack-data-analysis-thelook-ecommerce"
+version = "0.1.0"
+description = "Comprehensive sales and customer analysis of TheLook eCommerce dataset using Python for data processing, EDA, and preparation for Power BI."
+authors = [
+    {name = "Abdul Fathin Fawwaz", email = "inisial.ff@gmail.com"},
+]
+dependencies = []
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
