@@ -3,7 +3,7 @@ name = "thelook-ecommerce-analysis"
 version = "0.1.0"
 description = "Comprehensive sales and customer analysis of TheLook eCommerce dataset using Python for data processing, EDA, and preparation for Power BI."
 authors = [
-    {name = "Abdul Fathin Fawwaz", email = "inisial.ff@gmail.com"},
+    {name = "Abdul Fathin Fawwaz", email = "abdulfathinfawwaz@gmail.com"},
 ]
 dependencies = ["ipykernel>=6.29.5", "pandas>=2.2.3", "sqlalchemy>=2.0.41", "psycopg2>=2.9.10"]
 requires-python = "==3.12.*"
